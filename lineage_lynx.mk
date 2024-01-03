@@ -8,6 +8,16 @@
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+#Gapps
+$(call inherit-product, vendor/gms/gms_full.mk)
+
+#Crdroid_Stuff
+
+TARGET_IS_PIXEL_7 := true                                                              
+EXTRA_UDFPS_ANIMATIONS := true                                                         
+TARGET_BOOT_ANIMATION_RES := 1080                                                      
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Inherit device configuration
 $(call inherit-product, device/google/lynx/aosp_lynx.mk)
 $(call inherit-product, device/google/gs201/lineage_common.mk)
