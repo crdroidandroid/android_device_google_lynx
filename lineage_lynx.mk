@@ -13,6 +13,9 @@ $(call inherit-product-if-exists, vendor/google/camera/config.mk)
 # Face unlock
 $(call inherit-product-if-exists, vendor/google/faceunlock/config.mk)
 
+# Fingerprint
+TARGET_HAS_UDFPS := true
+
 # Inherit device configuration
 DEVICE_CODENAME := lynx
 DEVICE_PATH := device/google/lynx
