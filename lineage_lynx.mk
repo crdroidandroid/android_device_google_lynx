@@ -10,6 +10,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Camera
 $(call inherit-product-if-exists, vendor/google/camera/config.mk)
 
+# Face unlock
+$(call inherit-product-if-exists, vendor/google/faceunlock/config.mk)
 
 # Inherit device configuration
 DEVICE_CODENAME := lynx
