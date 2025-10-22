@@ -20,13 +20,13 @@
 {
     "repository": "crdroidandroid/proprietary_vendor_google_cheetah",
     "target_path": "vendor/google/cheetah",
-    "branch": "16.0",
+    "branch": "15.0",
     "remote": "github"
   },
 {
     "repository": "crdroidandroid/proprietary_vendor_google_panther",
     "target_path": "vendor/google/panther",
-    "branch": "16.0",
+    "branch": "15.0",
     "remote": "github"
   },
 {
@@ -38,7 +38,7 @@
   {
     "repository": "crdroidandroid/proprietary_vendor_google_lynx",
     "target_path": "vendor/google/lynx",
-    "branch": "16.0",
+    "branch": "15.0",
     "remote": "github"
   },
 {
