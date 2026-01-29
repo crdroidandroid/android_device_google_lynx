@@ -6,12 +6,12 @@
   {
     "repository": "LineageOS/android_device_google_lynx-kernels",
     "target_path": "device/google/lynx-kernels",
-    "branch": "lineage-23.0"
+    "branch": "lineage-23.2"
   },
 {
     "repository": "TheMuppets/proprietary_vendor_google_lynx",
     "target_path": "vendor/google/lynx",
-    "branch": "lineage-23.0"
+    "branch": "lineage-23.2"
   },
 {
     "repository": "crdroidandroid/proprietary_vendor_google_camera",
