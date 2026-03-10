@@ -105,6 +105,10 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/vendor.prop
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH)
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     libwifi-hal-ctrl:64

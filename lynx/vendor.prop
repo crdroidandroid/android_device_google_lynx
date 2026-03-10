@@ -24,9 +24,6 @@ persist.vendor.camera.start_cpu_throttling_at_moderate_thermal=1
 ro.gms.dck.eligible_wcc=2
 ro.gms.dck.se_capability=1
 
-# Device family
-ro.build.device_family=P10C10L10
-
 # Display
 ro.surface_flinger.ignore_hdr_camera_layers=true
 ro.surface_flinger.set_idle_timer_ms=1000
@@ -54,7 +51,7 @@ ro.vendor.config.build_carrier=europen
 vendor.rild.libpath=libsitril.so
 
 # SVN
-ro.vendor.build.svn=72
+ro.vendor.build.svn=73
 
 # USB
 ro.usb.uvc.enabled=true
