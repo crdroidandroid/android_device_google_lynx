@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
+    <bool name="config_wifi6ghzSupport">true</bool>
+
+    <!-- Array indicating wifi fatal firmware alert error code list from driver -->
+    <integer-array name="config_wifi_fatal_firmware_alert_error_code_list">
+        <item>1</item>
+        <item>256</item>
+        <item>257</item>
+        <item>258</item>
+        <item>259</item>
+        <item>260</item>
+        <item>261</item>
+        <item>262</item>
+        <item>263</item>
+        <item>264</item>
+        <item>512</item>
+        <item>513</item>
+        <item>514</item>
+    </integer-array>
+
+    <!--
+    Controls the mapping between RSSI and RSSI levels.
+
+    RSSI                                    RSSI Level
+    (-infinity, thresholds[0])                       0
+    [threshold[0], threshold[1])                     1
+    [threshold[1], threshold[2])                     2
+    ...                                            ...
+    [threshold[len-2], threshold[len-1])         len-1
+    [threshold[len-1], +infinity)                  len
+
+    where:
+        [a, b) is the range of integers `n` such that a <= n < b
+        `threshold[i]` represents the i'th element of the config_wifiRssiLevelThresholds array
+        and `len` is the length of the config_wifiRssiLevelThresholds array.
+    -->
+    <integer-array name="config_wifiRssiLevelThresholds">
+        <item>-99</item>
+        <item>-88</item>
+        <item>-77</item>
+        <item>-66</item>
+    </integer-array>
+
+    <!-- Enable the default coex channel avoidance algorithm and disable the functionality of
+         WifiManager#setCoexUnsafeChannels. -->
+    <bool name="config_wifiDefaultCoexAlgorithmEnabled">true</bool>
+
+    <!-- If the default coex channel avoidance algorithm is enabled, then avoid channels that
+         conflict with GPS L1. -->
+    <bool name="config_wifiCoexForGpsL1">true</bool>
+
+    <!-- Boolean indicating whether to trigger bugreport for WiFi subsystem restart issue -->
+    <bool name="config_wifi_subsystem_restart_bugreport_enabled">false</bool>
+</resources>
