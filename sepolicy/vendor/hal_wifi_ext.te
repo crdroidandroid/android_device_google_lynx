@@ -1,8 +1,9 @@
 r_dir_file(hal_wifi_ext, vendor_proc_wifi_dbg)
 
-unix_socket_send(hal_wifi_ext, property, lowi_server)
-unix_socket_send(hal_wifi_ext, property, vendor_location)
+unix_socket_connect(hal_wifi, vendor_location, vendor_location)
 
+allow hal_wifi_ext lowi_server:unix_dgram_socket sendto;
+allow hal_wifi_ext vendor_location:unix_dgram_socket sendto;
 allow hal_wifi_ext vendor_location_socket:dir rw_dir_perms;
 allow hal_wifi_ext vendor_location_socket:{ lnk_file sock_file } create_file_perms;
 allow hal_wifi_ext vendor_wifi_vendor_data_file:dir rw_dir_perms;

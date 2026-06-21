@@ -1,2 +1,2 @@
-type vendor_gnss_device, dev_type;
+type faceauth_heap_device, dev_type, dmabuf_heap_device_type;
 type vendor_wlan_device, dev_type;

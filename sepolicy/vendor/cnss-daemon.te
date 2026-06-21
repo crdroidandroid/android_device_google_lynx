@@ -1,5 +1,6 @@
 type cnss-daemon, domain;
 type cnss-daemon_exec, exec_type, file_type, vendor_file_type;
+type sysfs_cnss_daemon, fs_type, sysfs_type;
 
 net_domain(cnss-daemon)
 

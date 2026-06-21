@@ -1,5 +1,7 @@
+type lowi_server_exec, exec_type, file_type, vendor_file_type;
 type vendor_location, domain;
 type vendor_location_exec, exec_type, file_type, vendor_file_type;
+type vendor_location_sysfs, fs_type, sysfs_type;
 
 domain_auto_trans(vendor_location, lowi_server_exec, lowi_server)
 
